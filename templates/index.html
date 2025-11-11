@@ -22,7 +22,7 @@
       const chatlog = document.getElementById("chatlog");
       chatlog.innerHTML += `<p><b>You:</b> ${message}</p>`;
 
-      const res = await fetch("https://career-chatbot-backend-msjz.onrender.com/chat", {
+      const res = await fetch("/https://career-chatbot-backend-msjz.onrender.com/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message }),
