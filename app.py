@@ -28,7 +28,7 @@ def index():
     return render_template("index.html")
 
 
-@app.route("/https://career-chatbot-backend-msjz.onrender.com/chat/chat", methods=["POST"])
+@app.route("/https://career-chatbot-backend-msjz.onrender.com/chat", methods=["POST"])
 def chat():
     user_message = request.json["message"]
     recommendations = recommend_careers(user_message)
